@@ -1,11 +1,11 @@
-#!/usr/bin/python
+##!/usr/bin/python
 
 ##double comment the row above for Windows and comment out all the subprocess matter
 
 #import subprocess as sp
 import os.path as path
 
-xclass = "Register"
+xclass = "Control"
 
 #questo va in restyling
 
@@ -29,7 +29,7 @@ class XXX extends MY_Controller {
 	public function index()
 	{
 	    // load all the data needed in the views in variables to be passed as second parameter
-	    //$data['tile_sets'] = $this->xxx_model->some_method(); 
+	    $data['dummy'] = $this->hdata->iam_id; 
 	    
 		$this->load->view('intro');
 		$this->load->view('xxx_form',$data);

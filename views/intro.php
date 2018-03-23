@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Welcome to the Unified Identity access Manager</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="<?php echo config_item('base_url'); ?>/iam/libraries/cookies.js"></script>
+<script src="<?php echo config_item('base_url'); ?>iam/libraries/cookies.js"></script>
 
 <script type="text/javascript">
 var base_url = "<?php echo config_item('app_start_url') ; ?>"

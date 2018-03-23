@@ -19,7 +19,7 @@ class Welcome extends MY_Controller {
                 $r = $this->welcome_model->logon($this->hdata->username,
                                             $this->hdata->password);
                 $retval = new stdClass();
-                $retval->callback = '';
+                $retval->callback = '/iam.php/control';
                 $retval->message = '';
                 $retval->iam_id = '0';
                 if ($r) {
