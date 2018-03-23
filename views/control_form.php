@@ -77,7 +77,7 @@ function run_local() {
 		<div id="body">
 			<h3>Apps available:</h3>
             <ul>
-                <li><a href="/dnd.php">DND Maps</a></li>
+                <li><a href="<?php echo config_item('base_url') . "/dnd.php"; ?>">DND Maps</a></li>
             </ul>
 			<h3>Your data: <?php echo $username; ?></h3>
             <P>To update a value (including the password) type the new value. It will be saved automatically when you 

@@ -15,7 +15,7 @@ class Control extends MY_Controller {
 	    // load all the data needed in the views in variables to be passed as second parameter
         $data = $this->control_model->read_current_user($this->hdata->iam_id); 
         if($data === false) {
-            header("Location: /iam.php",true);
+            header("Location: " . config_item('app_start_url'),true);
         }
 	    
 		$this->load->view('intro');

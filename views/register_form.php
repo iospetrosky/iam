@@ -1,4 +1,3 @@
-
 <?php
 $bu = config_item('app_start_url') ;
 $ajax = $bu . "/register/";
@@ -17,7 +16,7 @@ function run_local() {
             data: params,
             success: function(data) {
                 if (data != '0') {
-                    ShowAlert("Identity created. You can now log into the system","Message","","/iam.php")
+                    ShowAlert("Identity created. You can now log into the system","Message","",base_url)
                 } else {
                     ShowAlert("There was an error during the creation of your identity","Error")
                 }
