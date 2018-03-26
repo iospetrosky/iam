@@ -37,7 +37,7 @@ $(document).ready(function () {
 </script>
 <?php
     echo link_tag('iam/libraries/main.css');
-    echo link_tag('app_dnd/libraries/modal.css');
+    echo link_tag('iam/libraries/modal.css');
 ?>
 
 
