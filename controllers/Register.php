@@ -40,7 +40,5 @@ class Register extends MY_Controller {
 	    }
 	}
 	
-	
-	
 }
     

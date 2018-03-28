@@ -20,7 +20,19 @@ class Control extends MY_Controller {
 	    
 		$this->load->view('intro');
 		$this->load->view('control_form',$data);
-	}
+    }
+    
+	
+	public function api_gui($uid) {
+        // API call for Get User Info
+        $n = $this->control_model->read_current_user($uid);
+        if ($n) {
+            echo json_encode($n);
+        } else {
+            echo 'ERR';
+        }
+    }
+    
 	
 	public function ajax() {
 	    switch($this->hdata->aktion) {
