@@ -1,7 +1,7 @@
 
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+//just to make an edit
 class Control extends MY_Controller {
     
     public function __construct()
